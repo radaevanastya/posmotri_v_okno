@@ -126,6 +126,7 @@ async function waitForReadyVideo(video) {
 // Устанавливает прелоадер на время загрузки данных ✅
 function showPreloader(tmp, parent) {
   const node = tmp.content.cloneNode(true);
+  parent.style.overflow = 'hidden';
   parent.append(node);
   console.log('показал прелоадер');
 }
@@ -133,6 +134,7 @@ function showPreloader(tmp, parent) {
 // Убирает прелоадер из DOM ✅
 function removePreloader(parent, preloaderSelector) {
   const preloader = parent.querySelector(preloaderSelector);
+  parent.style.overflow = 'hidden auto';
   if (preloader) {
     preloader.remove();
   }
