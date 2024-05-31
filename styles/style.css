@@ -42,9 +42,6 @@ blockquote,
 fieldset {
   margin: 0;
   padding: 0;
-}
-
-fieldset {
   border: none;
 }
 
@@ -52,6 +49,7 @@ ul,
 ol {
   list-style: none;
 }
+
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -113,13 +111,6 @@ ol {
   font-family: "Fira Sans Condensed", sans-serif;
   align-items: center; 
   appearance: none;
-}
-
-.search-form__fieldset {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 5px;
 }
 
 .search-form__checkbox-list {
@@ -220,6 +211,7 @@ ol {
 .content__list-item:not(:last-child) {
   margin-bottom: 30px;
 }
+
 .content__video-card {
   display: flex;
   justify-content: space-between;
