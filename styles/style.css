@@ -72,6 +72,7 @@ ol {
   display: flex;
   flex-direction: column;
 }
+
 .result__video-container {
   position: relative;
 }
